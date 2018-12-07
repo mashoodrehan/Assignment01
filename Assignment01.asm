@@ -21,3 +21,8 @@ li $v0, 1
 syscall
 li $v0, 10
 syscall
+else:
+mul $s1, $s1, 2
+add $s1, $s1, 1
+sub $t0, $t0, 1
+bnez $t0, else
