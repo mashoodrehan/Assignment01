@@ -3,7 +3,7 @@ disks: .asciiz "No of moves are : "
 inp: .asciiz "Enter no of disks : "
 zero: .asciiz "Value entered is zero (0)"
 .text 
-add $s1, $s1, 1
+add $s1, $s1, 0
 la $a0, inp
 li $v0, 4
 syscall
